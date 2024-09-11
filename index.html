@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vinhos Mathugo</title>
+        <!-- 
+            Vinicius Mattera
+            Victor Hugo 
+         -->
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>         
+        <link rel="stylesheet" href="public/css/global.css">
+        <link rel="stylesheet" href="public/css/style.css">
+    </head>
+    <body>
+    <div class="notification"> 
+        <h1 class="notification-text"> Vinho registrado com sucesso! </h1>
+    </div>
+    <div class="navbar">
+    <div onclick="redirect(`/adega/index.html`)" class="nav-logo">
+
+    </div>
+    <div class="nav-search">
+        <input type="text" name="search" class="search" autocomplete="name" placeholder="Digite sua pesquisa!">
+    </div>
+    <div class="nav-links">
+        <ul>
+            <li onclick="redirect(``)" class="nav-links-btn"><ion-icon size="large" class="icon-vinho" name="wine"></ion-icon> <span class="nav-links-btn-text">Vinhos</span> </li>
+            <li class="nav-links-btn"><ion-icon size="large" name="cart"></ion-icon> <span class="nav-links-btn-text">Carrinho</span> </li>          
+            <li onclick="redirect('')" class="nav-links-btn"><ion-icon size="large" name="person-circle"></ion-icon> <span class="nav-links-btn-text">Login</span> </li>
+        </ul>
+    </div>
+</div>
+<body>
+    <div class="main">
+            <div class="container">
+                <div class="carrousel">
+                    <div class="images">
+                        <img src="public/imgs/banner1.png" alt="">
+    
+                    </div>
+                    <div class="btns">
+                        <div class="btn-back">
+                           <ion-icon id="back" name="chevron-back-outline"></ion-icon>
+                        </div>
+                        <div class="btns-dots">
+                            <div class="dot selected"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
+                        <div class="btn-next">
+                           <ion-icon id="next" name="chevron-forward-outline"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlits">
+                    <h1 class="highlits-title">
+                        Descontos do dia!
+                    </h1>
+                </div>
+            </div>
+        <div class="highlights-cards">
+            <div class="container">
+                
+                <div class="card">
+                    <div class="card-image">
+                        <img src="public/imgs/Bordo-Suave-750ml.png" alt="" class="card-img">
+                    </div>
+                    <div class="card-sub">
+                        <h2 class="card-sub-type-text">
+                            Tinto
+                        </h2> 
+                        <h1 class="card-sub-name-text">
+                            Vinho bom
+                        </h1>
+                        <div class="card-sub-prices">
+                            <h3 class="card-subprice">
+                                59.79
+                            </h3>
+                            <h2 class="card-price">
+                                49.79
+                            </h2>
+                        </div>
+                        <div class="card-sub-buy">
+                            <button class="card-sub-buy-button"> Adicionar ao carrinho!</button>
+                            <img src="public/icons/heart.svg" onclick="like(this)" alt="" id="like-button">
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="public/imgs/Bordo-Suave-750ml.png" alt="" class="card-img">
+                    </div>
+                    <div class="card-sub">
+                        <h2 class="card-sub-type-text">
+                            Tinto
+                        </h2> 
+                        <h1 class="card-sub-name-text">
+                            Vinho bom
+                        </h1>
+                        <div class="card-sub-prices">
+                            <h3 class="card-subprice">
+                                59.79
+                            </h3>
+                            <h2 class="card-price">
+                                49.79
+                            </h2>
+                        </div>
+                        <div class="card-sub-buy">
+                            <button class="card-sub-buy-button"> Adicionar ao carrinho!</button>
+                            <img src="public/icons/heart.svg" onclick="like(this)" alt="" id="like-button">
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="public/imgs/Bordo-Suave-750ml.png" alt="" class="card-img">
+                    </div>
+                    <div class="card-sub">
+                        <h2 class="card-sub-type-text">
+                            Tinto
+                        </h2> 
+                        <h1 class="card-sub-name-text">
+                            Vinho bom
+                        </h1>
+                        <div class="card-sub-prices">
+                            <h3 class="card-subprice">
+                                59.79
+                            </h3>
+                            <h2 class="card-price">
+                                49.79
+                            </h2>
+                        </div>
+                        <div class="card-sub-buy">
+                            <button class="card-sub-buy-button"> Adicionar ao carrinho!</button>
+                            <img src="public/icons/heart.svg" onclick="like(this)" alt="" id="like-button">
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="public/imgs/Bordo-Suave-750ml.png" alt="" class="card-img">
+                    </div>
+                    <div class="card-sub">
+                        <h2 class="card-sub-type-text">
+                            Tinto
+                        </h2> 
+                        <h1 class="card-sub-name-text">
+                            Vinho bom
+                        </h1>
+                        <div class="card-sub-prices">
+                            <h3 class="card-subprice">
+                                59.79
+                            </h3>
+                            <h2 class="card-price">
+                                49.79
+                            </h2>
+                        </div>
+                        <div class="card-sub-buy">
+                            <button class="card-sub-buy-button"> Adicionar ao carrinho!</button>
+                            <img src="public/icons/heart.svg" onclick="like(this)" alt="" id="like-button">
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="public/imgs/Bordo-Suave-750ml.png" alt="" class="card-img">
+                    </div>
+                    <div class="card-sub">
+                        <h2 class="card-sub-type-text">
+                            Tinto
+                        </h2> 
+                        <h1 class="card-sub-name-text">
+                            Vinho bom
+                        </h1>
+                        <div class="card-sub-prices">
+                            <h3 class="card-subprice">
+                                59.79
+                            </h3>
+                            <h2 class="card-price">
+                                49.79
+                            </h2>
+                        </div>
+                        <div class="card-sub-buy">
+                            <button class="card-sub-buy-button"> Adicionar ao carrinho!</button>
+                            <img src="public/icons/heart.svg" onclick="like(this)" alt="" id="like-button">
+                        </div>
+    
+                    </div>
+                </div>
+            
+    
+        </div>
+    </div>
+    
+</body>
